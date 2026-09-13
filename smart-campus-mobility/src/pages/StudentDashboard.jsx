@@ -1,4 +1,4 @@
-﻿import { useMobility } from '../context/MobilityContext';
+import { useMobility } from '../context/MobilityContext';
 import DestinationSearch from '../components/DestinationSearch';
 import AIRecommendation from '../components/AIRecommendation';
 import BusCard from '../components/BusCard';

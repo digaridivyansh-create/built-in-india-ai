@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 const fs = require("fs");
-=======
 ﻿const fs = require("fs");
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 const path = require("path");
 const db = require("../firebase/firebase_admin");
 
 const DATA_FILE = path.join(__dirname, "..", "data", "bus_data.json");
 
-<<<<<<< HEAD
 const buses = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
 
 function updateBus(bus) {
@@ -79,7 +75,6 @@ setInterval(() => {
     updateAllBuses().catch((error) => {
         console.error("Firebase sync error:", error.message);
     });
-=======
 /*
  * GPS coordinates corresponding exactly to the SVG coordinates
  * used in mockData.js.
@@ -435,5 +430,4 @@ setInterval(() => {
             );
         }
     );
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 }, 3000);

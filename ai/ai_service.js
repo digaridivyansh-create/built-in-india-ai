@@ -7,7 +7,6 @@ const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
 });
 
-<<<<<<< HEAD
 async function getLiveBuses() {
     const snapshot = await db.ref("buses").once("value");
     const buses = snapshot.val();
@@ -124,7 +123,6 @@ Rules:
     };
 }
 
-=======
 const ROUTE_SERVES = {
     R1: ["Main Gate", "Block A", "Library", "Block C"],
     R2: ["Hostel", "Academic Block", "Block B", "Main Gate"],
@@ -400,14 +398,10 @@ async function getAIRecommendation(
     );
 }
 
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 module.exports = {
     getAIRecommendation,
     getLiveBuses
 };
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)

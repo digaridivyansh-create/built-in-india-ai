@@ -1,7 +1,6 @@
 {
   "BUS12": {
     "busId": "BUS12",
-<<<<<<< HEAD
     "latitude": 28.614601099435674,
     "longitude": 77.20607414494773,
     "speed": 43.16888758773102,
@@ -35,7 +34,6 @@
     "eta": 61,
     "occupancy": 30,
     "lastUpdated": "2026-09-13T05:02:26.038Z"
-=======
     "routeId": "R1",
     "status": "delayed",
     "speed": 10,
@@ -72,6 +70,5 @@
     "latitude": 28.6187324471588,
     "longitude": 77.21332528761666,
     "lastUpdated": "2026-09-13T10:15:43.908Z"
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
   }
 }

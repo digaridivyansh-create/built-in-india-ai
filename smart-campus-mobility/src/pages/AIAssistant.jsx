@@ -1,4 +1,4 @@
-﻿import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useMobility } from '../context/MobilityContext';
 
 const API_BASE = 'http://localhost:3000';

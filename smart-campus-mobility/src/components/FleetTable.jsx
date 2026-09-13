@@ -1,4 +1,4 @@
-﻿import StatusBadge from './StatusBadge';
+import StatusBadge from './StatusBadge';
 import OccupancyBadge from './OccupancyBadge';
 
 export default function FleetTable({ buses, routesById }) {

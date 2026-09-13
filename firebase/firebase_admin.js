@@ -1,4 +1,4 @@
-﻿const { initializeApp, cert } = require("firebase-admin/app");
+const { initializeApp, cert } = require("firebase-admin/app");
 const { getDatabase } = require("firebase-admin/database");
 
 const serviceAccount = {
