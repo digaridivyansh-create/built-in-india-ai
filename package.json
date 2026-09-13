@@ -20,10 +20,7 @@
   "homepage": "https://github.com/digaridivyansh-create/built-in-india-ai#readme",
   "dependencies": {
     "@google/genai": "^2.22.0",
-<<<<<<< HEAD
-=======
     "cors": "^2.8.6",
->>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "firebase": "^12.19.0",
