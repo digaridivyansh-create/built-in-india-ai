@@ -1,12 +1,27 @@
+<<<<<<< HEAD
 require("dotenv").config();
 
 const express = require("express");
 const { getAIRecommendation, getLiveBuses } = require("./ai/ai_service");
+=======
+﻿require("dotenv").config();
+
+const express = require("express");
+const cors = require("cors");
+const { getAIRecommendation, getLiveBuses } = require("./ai/ai_service");
+const db = require("./firebase/firebase_admin");
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+<<<<<<< HEAD
 app.use(express.json());
+=======
+app.use(cors({ origin: "http://localhost:5173" }));
+app.use(express.json());
+app.use(express.static("smart-campus-mobility"));
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 
 app.get("/", (req, res) => {
     res.json({
@@ -25,7 +40,10 @@ app.get("/api/health", (req, res) => {
     });
 });
 
+<<<<<<< HEAD
 // LIVE BUS DATA
+=======
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 app.get("/api/buses", async (req, res) => {
     try {
         const buses = await getLiveBuses();
@@ -34,7 +52,10 @@ app.get("/api/buses", async (req, res) => {
             count: buses.length,
             buses
         });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
     } catch (error) {
         console.error("Buses API error:", error.message);
 
@@ -44,9 +65,15 @@ app.get("/api/buses", async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
 // AI RECOMMENDATION
 app.get("/api/recommendation", async (req, res) => {
     try {
+=======
+app.get("/api/recommendation", async (req, res) => {
+    try {
+        const currentLocation = req.query.currentLocation || "Main Gate";
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
         const destination = req.query.destination;
 
         if (!destination) {
@@ -55,10 +82,19 @@ app.get("/api/recommendation", async (req, res) => {
             });
         }
 
+<<<<<<< HEAD
         const result = await getAIRecommendation(destination);
 
         res.json(result);
 
+=======
+        const result = await getAIRecommendation(
+            destination,
+            currentLocation
+        );
+
+        res.json(result);
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
     } catch (error) {
         console.error("Recommendation API error:", error.message);
 
@@ -68,6 +104,47 @@ app.get("/api/recommendation", async (req, res) => {
     }
 });
 
+<<<<<<< HEAD
+=======
+app.post("/api/demo/delay", async (req, res) => {
+    try {
+        await db.ref("demoDelay").set(true);
+
+        res.json({
+            success: true,
+            message: "Demo delay activated",
+            busId: "BUS12",
+            status: "delayed"
+        });
+    } catch (error) {
+        console.error("Demo delay error:", error.message);
+
+        res.status(500).json({
+            success: false,
+            error: "Unable to activate demo delay"
+        });
+    }
+});
+
+app.post("/api/demo/reset", async (req, res) => {
+    try {
+        await db.ref("demoDelay").set(false);
+
+        res.json({
+            success: true,
+            message: "Demo delay reset"
+        });
+    } catch (error) {
+        console.error("Demo reset error:", error.message);
+
+        res.status(500).json({
+            success: false,
+            error: "Unable to reset demo"
+        });
+    }
+});
+
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
 app.listen(PORT, () => {
     console.log("========================================");
     console.log("   SMART CAMPUS MOBILITY API");
@@ -81,4 +158,8 @@ app.listen(PORT, () => {
     console.log(
         `http://localhost:${PORT}/api/recommendation?destination=NSUT_Main_Gate`
     );
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)

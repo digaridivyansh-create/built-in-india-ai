@@ -1,6 +1,7 @@
 {
   "BUS12": {
     "busId": "BUS12",
+<<<<<<< HEAD
     "latitude": 28.614601099435674,
     "longitude": 77.20607414494773,
     "speed": 43.16888758773102,
@@ -34,5 +35,43 @@
     "eta": 61,
     "occupancy": 30,
     "lastUpdated": "2026-09-13T05:02:26.038Z"
+=======
+    "routeId": "R1",
+    "status": "delayed",
+    "speed": 10,
+    "occupancy": 74,
+    "progress": 0.508333333333334,
+    "nextStop": "Library",
+    "eta": 14,
+    "latitude": 28.61818425,
+    "longitude": 77.2102075,
+    "lastUpdated": "2026-09-13T10:15:43.908Z"
+  },
+  "BUS14": {
+    "busId": "BUS14",
+    "routeId": "R2",
+    "status": "on_time",
+    "speed": 35.04145721758383,
+    "occupancy": 58,
+    "progress": 0.22243653728420004,
+    "nextStop": "Academic Block",
+    "eta": 10,
+    "latitude": 28.611250675092446,
+    "longitude": 77.20867414699644,
+    "lastUpdated": "2026-09-13T10:15:43.908Z"
+  },
+  "BUS16": {
+    "busId": "BUS16",
+    "routeId": "R3",
+    "status": "on_time",
+    "speed": 28.954414085663828,
+    "occupancy": 66,
+    "progress": 0.6250334437971011,
+    "nextStop": "Block C",
+    "eta": 4,
+    "latitude": 28.6187324471588,
+    "longitude": 77.21332528761666,
+    "lastUpdated": "2026-09-13T10:15:43.908Z"
+>>>>>>> 49ef752 (Complete Smart Campus Mobility AI integration)
   }
 }
