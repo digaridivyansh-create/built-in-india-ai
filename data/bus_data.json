@@ -1,0 +1,38 @@
+{
+  "BUS12": {
+    "busId": "BUS12",
+    "latitude": 28.614601099435674,
+    "longitude": 77.20607414494773,
+    "speed": 43.16888758773102,
+    "status": "on_time",
+    "routeId": "ROUTE_A",
+    "nextStop": "NSUT_Main_Gate",
+    "eta": 5,
+    "occupancy": 69,
+    "lastUpdated": "2026-09-13T05:02:26.038Z"
+  },
+  "BUS14": {
+    "busId": "BUS14",
+    "latitude": 28.614731476550226,
+    "longitude": 77.21721220743768,
+    "speed": 8.247403076482055,
+    "status": "on_time",
+    "routeId": "ROUTE_A",
+    "nextStop": "NSUT_Main_Gate",
+    "eta": 5,
+    "occupancy": 51,
+    "lastUpdated": "2026-09-13T05:02:26.038Z"
+  },
+  "BUS16": {
+    "busId": "BUS16",
+    "latitude": 28.615377027383225,
+    "longitude": 77.21393240750254,
+    "speed": 30.617823521689893,
+    "status": "delayed",
+    "routeId": "ROUTE_A",
+    "nextStop": "NSUT_Library",
+    "eta": 61,
+    "occupancy": 30,
+    "lastUpdated": "2026-09-13T05:02:26.038Z"
+  }
+}
